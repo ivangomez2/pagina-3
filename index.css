@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "open-font";
+  src: url(./OpenSans-Bold.ttf);
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("./Roboto-Black.ttf");
+}
+
+body {
+  margin: 0;
+}
+
+.color {
+  background-color: #fafafa;
+}
+
+.contene1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 36px 80px;
+  align-items: center;
+  border: none;
+  width: 100%;
+}
+
+.barra {
+  font-family: "Roboto";
+  margin: 40px;
+  color: black;
+  font-size: 19px;
+  text-decoration: none;
+}
+
+.contene2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 80px;
+  gap: 528px;
+  width: 100%;
+}
+
+.section-black {
+  background-color: #141414;
+  display: flex;
+  padding: 145px 306px;
+  width: 100%;
+}
+
+.titlo {
+  font-family: "open-font";
+  padding: 0px 95px;
+  font-size: 32px;
+  color: #fafafa;
+}
+
+.parrafo {
+  font-family: "Roboto";
+  color: #fafafa;
+  padding: 0 90px;
+}
+
+.tit{
+    text-align: center;
+    font-family: "open-font";
+    color: #2C2C2C;
+    
+    
+}
+.divisor-images{
+ display: flex;
+ padding: 30px; 
+}
+
+.segunda{
+    margin: 0 320px;
+}
+
+.cont-text{
+    display: flex;
+}
+
+.uno{
+    padding: 0 100px;
+}
+
+.dos{
+    padding: 0 370px;
+}
+
+.tres{
+    padding: 0 30px
+}
