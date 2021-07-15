@@ -1,97 +1,87 @@
-* {
-  box-sizing: border-box;
+*{box-sizing: border-box;}
+
+body{
+ 
 }
 
-@font-face {
-  font-family: "open-font";
-  src: url(./OpenSans-Bold.ttf);
-}
-@font-face {
-  font-family: "Roboto";
-  src: url("./Roboto-Black.ttf");
-}
-
-body {
-  margin: 0;
-}
-
-.color {
-  background-color: #fafafa;
-}
-
-.contene1 {
+.contenedor-Principal{
   display: flex;
   justify-content: space-between;
-  padding: 36px 80px;
+  width: 100%;
+  
+}
+
+
+.medidas{
+ align-items: center;
+  width: 30%;
+}
+
+
+.bienvenida{
+
+  text-align: center;
+  font-size: 48px;
+  width: 100%;
+  padding: 42px;
+}
+
+.imag{
+
+  width: 318px;
+  height: 300px;
   align-items: center;
-  border: none;
-  width: 100%;
+  margin: 0 auto;
+  display: block;
 }
 
-.barra {
-  font-family: "Roboto";
-  margin: 40px;
-  color: black;
-  font-size: 19px;
-  text-decoration: none;
+.contenedor-negro{
+  background-color: black;
+  color: #FAFAFA;
+  text-align: center;
+  padding: 35px 35px;
 }
 
-.contene2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 0 80px;
-  gap: 528px;
-  width: 100%;
+.check{
+ width: 80px;
+ height: 80px;
+ margin-top: 50px
 }
 
-.section-black {
-  background-color: #141414;
-  display: flex;
-  padding: 145px 306px;
-  width: 100%;
+.contenedor-blanco{
+  text-align: center;
+  padding: 80px;
+  color: #2C2C2C;
+  font-family: "roboto";
+  font-size: 16px;
 }
 
-.titlo {
-  font-family: "open-font";
-  padding: 0px 95px;
+.medidas-pc{
+  width: 138px;
+  height: 128,03px;
+  margin-top: 60px;
+}
+
+.titulo-blanco{
+  color: #2C2C2C;
+  font-family: "open";
   font-size: 32px;
+  
+}
+
+.contenedor-contacto{
+  background-color: black;
+ 
+}
+
+.tituloDos{
+  text-align: center;
+  padding: 69px;
   color: #fafafa;
+  font-family: "open";
+  font-size: 32px;
 }
 
-.parrafo {
-  font-family: "Roboto";
-  color: #fafafa;
-  padding: 0 90px;
-}
-
-.tit{
-    text-align: center;
-    font-family: "open-font";
-    color: #2C2C2C;
-    
-    
-}
-.divisor-images{
- display: flex;
- padding: 30px; 
-}
-
-.segunda{
-    margin: 0 320px;
-}
-
-.cont-text{
-    display: flex;
-}
-
-.uno{
-    padding: 0 100px;
-}
-
-.dos{
-    padding: 0 370px;
-}
-
-.tres{
-    padding: 0 30px
+.label{
+  color: white;
 }
