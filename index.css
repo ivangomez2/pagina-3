@@ -163,6 +163,18 @@ body{
   padding: 9px 35px;
 }
 
+@media (min-width:900px) {
+  .label{
+   display:inline-block;
+   text-align: left;
+   width: 100%;
+   
+      
+   
+   
+  }
+}
+
 .imput{
   color: white;
   border: none;
@@ -171,7 +183,18 @@ body{
   width: 80%;
   margin: 0 auto;
   min-height: 40px;
+  max-width: 355px;
 }
+
+@media (min-width:900px) {
+  .imput{
+    color: white;
+    display: block;
+    margin: auto;
+    max-width: 376px;
+  }
+}
+
 
 .email{
   color: white;
@@ -202,4 +225,13 @@ body{
   padding:10px;
   display: flex;
   gap:10px
+}
+
+@media (min-width:900px) {
+  .tituloDos{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+  }
 }
