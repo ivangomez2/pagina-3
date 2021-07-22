@@ -1,7 +1,17 @@
 *{box-sizing: border-box;}
 
 body{
- 
+ margin: 0;
+}
+
+@font-face {
+  font-family: "open";
+  src: url(./OpenSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: roboto;
+  src: url(./Roboto-Black.ttf);
 }
 
 .contenedor-Principal{
@@ -19,11 +29,20 @@ body{
 
 
 .bienvenida{
-
+ font-family: "open";
   text-align: center;
   font-size: 48px;
   width: 100%;
   padding: 42px;
+}
+
+@media (min-width:900px) {
+  .bienvenida{
+  font-family: "open";
+  margin: 40px 60px;
+  width: 100%;
+  text-align:left
+  }
 }
 
 .imag{
@@ -35,12 +54,48 @@ body{
   display: block;
 }
 
+@media (min-width:900px){
+  .imag{
+   width:435px;
+   Height:395px;
+  }
+}
+
+
+@media (min-width:900px) {
+
+.juntos{
+  display: flex;
+  justify-content: space-between;
+}
+}
+
+
+
 .contenedor-negro{
   background-color: black;
   color: #FAFAFA;
   text-align: center;
-  padding: 35px 35px;
+  padding: 35px 35px; /* aca necesitaria ayuda*/
 }
+
+@media (min-width:900px) {
+.contenedor-negro{
+  display: flex
+}
+}
+  @media (min-width:900px) {
+  .lore{
+ text-align: center; 
+  }
+}
+
+.ivan{
+  font-family: "open";
+}
+
+
+
 
 .check{
  width: 80px;
@@ -48,13 +103,17 @@ body{
  margin-top: 50px
 }
 
+
+
 .contenedor-blanco{
   text-align: center;
-  padding: 80px;
+  margin: auto;
   color: #2C2C2C;
   font-family: "roboto";
   font-size: 16px;
 }
+
+
 
 .medidas-pc{
   width: 138px;
@@ -70,8 +129,13 @@ body{
 }
 
 .contenedor-contacto{
-  background-color: black;
- 
+  background-color: #141414;
+  padding: 30px;
+  align-items: center;
+  display: flexbox;
+  width: 100%;
+
+
 }
 
 .tituloDos{
@@ -82,6 +146,60 @@ body{
   font-size: 32px;
 }
 
+@media (min-width:900px) {
+  .tituloDos{
+   display: flex;
+  }
+}
+
+.contenedor-nombre{
+  background-color: #141414;
+}
+
 .label{
   color: white;
+  display: inline-block;
+  size: 13px;
+  padding: 9px 35px;
+}
+
+.imput{
+  color: white;
+  border: none;
+  display: block;
+  size: 80px;
+  width: 80%;
+  margin: 0 35px;
+  min-height: 40px;
+}
+
+.email{
+  color: white;
+  margin-top:27px;
+  display: block;
+}
+
+.texto{
+ min-height: 100px;
+ width: 80%;
+}
+
+
+
+.boton{
+  background-color: #FFD953;
+  text-align: center;
+  color: #141414;
+  margin-top: 60px;
+  
+}
+.contenedor-final{
+  background-color: #DBDBDB;
+  padding-top: 40px;
+  
+}
+.insta-image{
+  padding:10px;
+  display: flex;
+  gap:10px
 }
