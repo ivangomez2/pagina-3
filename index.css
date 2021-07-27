@@ -1,8 +1,9 @@
 *{box-sizing: border-box;}
-
+ 
 body{
  margin: 0;
 }
+
 
 @font-face {
   font-family: "open";
@@ -17,14 +18,22 @@ body{
 .contenedor-Principal{
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 100%;    
+}
+
+
+
+.menu{
+  justify-content: center;
+  padding: 70px 50px;
+  
   
 }
 
 
-.medidas{
- align-items: center;
-  width: 30%;
+
+.agregado{
+  display: none;
 }
 
 
@@ -36,14 +45,6 @@ body{
   padding: 42px;
 }
 
-@media (min-width:900px) {
-  .bienvenida{
-  font-family: "open";
-  margin: 40px 60px;
-  width: 100%;
-  text-align:left
-  }
-}
 
 .imag{
 
@@ -54,125 +55,168 @@ body{
   display: block;
 }
 
-@media (min-width:900px){
-  .imag{
-   width:435px;
-   Height:395px;
-  }
-}
-
-
-@media (min-width:900px) {
-
-.juntos{
+.seccion-dos{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  background-color: #141414;
+  padding:55px 0px 68px 0px;
 }
+.contenedor-seccion-dos{
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  padding:0px;
+  width: 100%;
 }
-
-
-
-.contenedor-negro{
-  background-color: black;
+.contenedor-ivan{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.titulo-ivan{
+  font-family: 'Open Sans';
+  font-weight: 700;
+  font-size: 32px;
   color: #FAFAFA;
-  text-align: center;
-  padding: 35px 35px; /* aca necesitaria ayuda*/
+  margin:0px
 }
-
-@media (min-width:900px) {
-.contenedor-negro{
-  display: flex
+.lore{
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 16px;
+  max-width: 312px;
+  color: #FAFAFA;
+  padding:0px;
+  margin:41px 0px 57px 0px
 }
+.logos{
+  height: 80px;
 }
-  @media (min-width:900px) {
-  .lore{
- text-align: center; 
-  }
-}
-
-.ivan{
-  font-family: "open";
-}
-
-
-
-
-.check{
- width: 80px;
- height: 80px;
- margin-top: 50px
-}
-
-
 
 .contenedor-blanco{
-  text-align: center;
-  margin: auto;
-  color: #2C2C2C;
-  font-family: "roboto";
-  font-size: 16px;
-}
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 0px 65px 0px;
+  width: 100%;
 
-
-
-.medidas-pc{
-  width: 138px;
-  height: 128,03px;
-  margin-top: 60px;
 }
 
 .titulo-blanco{
-  color: #2C2C2C;
-  font-family: "open";
+  font-family: 'Open Sans';
+  font-weight: 700;
   font-size: 32px;
-  
+  margin-bottom: 50px;
+  text-align: center;
 }
+.servicios{
+  display: flex;
+  flex-direction: column;
+  margin:0px;
+  padding: 0px;
+}
+.servicio{
+  display: flex;
+  flex-direction: column;
+  gap:15px;
+  align-items: center;
+}
+.pcs{
+  width: 138px;
+}
+.title-service{
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 24px;
+}
+.descripcion{
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 16px;
+  max-width: 262px;
+  text-align: center;
+}
+
+@media (min-width: 900px) {
+  .seccion-3{
+    padding: 59px 0px 100px 0px;
+  }
+  .titule-service{
+    font-size: 48px;
+    margin-bottom: 80px;
+  }
+  .servicios{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1440px;
+    gap:100px;
+  }
+}
+
 
 .contenedor-contacto{
   background-color: #141414;
-  padding: 30px;
-  align-items: center;
-  display: flexbox;
-  width: 100%;
-
+  
 
 }
 
 .tituloDos{
   text-align: center;
-  padding: 69px;
+  padding:69px;
   color: #fafafa;
   font-family: "open";
-  font-size: 32px;
-}
-
-@media (min-width:900px) {
-  .tituloDos{
-   display: flex;
-  }
-}
-
-.contenedor-nombre{
+  
   background-color: #141414;
 }
 
-.label{
-  color: white;
-  display: inline-block;
-  size: 13px;
-  padding: 9px 35px;
+
+
+.seccion-cuatro {
+  display: flex;
+  flex-direction: column;
+  height: 660px;
+  background-color: #141414;
+  color: #fafafa;
+  padding: 0px 20px;
+  width: 100%;
+}
+.label {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+}
+.form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.submit-button {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #ffd953;
+  color: #141414;
+  border-radius: 4px;
+  width: 100%;
+  height: 45px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 45px;
 }
 
-@media (min-width:900px) {
-  .label{
-   display:inline-block;
-   text-align: left;
-   width: 100%;
-   
-      
-   
-   
-  }
+
+.oculto{
+  display: none;
+}
+
+
+.check{
+  display: none;
 }
 
 .imput{
@@ -186,20 +230,12 @@ body{
   max-width: 355px;
 }
 
-@media (min-width:900px) {
-  .imput{
-    color: white;
-    display: block;
-    margin: auto;
-    max-width: 376px;
-  }
-}
-
 
 .email{
   color: white;
   margin-top:27px;
   display: block;
+  
 }
 
 .texto{
@@ -216,15 +252,39 @@ body{
   margin-top: 60px;
   
 }
-.contenedor-final{
-  background-color: #DBDBDB;
-  padding-top: 40px;
-  
+
+
+.occult{
+  display: none;
 }
-.insta-image{
-  padding:10px;
+
+.cont-final{
+  display:flex;
+  background-color: #DBDBDB;
+  flex-direction: column;
+  gap:89px;
+  padding:53px 0px 119px 20px;
+}
+
+.labl{
+  font-family: 'Roboto';
+  font-weight: 399;
+  font-size: 16px;
+}
+
+.logo{
+  max-width: 90px;
+}
+
+.redes-sociales{
+  display:grid;
+  gap:30px
+}
+
+.ig,.lidin,.git{
   display: flex;
-  gap:10px
+  align-items: center;
+  gap:12px
 }
 
 @media (min-width:900px) {
@@ -234,4 +294,123 @@ body{
    justify-content: center;
    
   }
+  .submit-button {
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #ffd953;
+    color: #141414;
+    border-radius: 4px;
+    width: 100%;
+    height: 45px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 45px;
+  }
+  
+   .barras{
+    display: none;
+    }
+  
+  
+
+  .imput{
+   color: white;
+   display: block;
+   margin: auto;
+   max-width: 376px;
+    }
+
+.seccion-cuatro {
+ display: flex;
+ flex-direction: column;
+ height: 660px;
+ background-color: #141414;
+ color: #fafafa;
+ padding: 0px 20px;
+ width: 100%;
+ }
+      
+  .form {
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-around;
+ }
+        
+  .label{
+ font-family: "Roboto", sans-serif;
+ font-size: 13px;
+}
+
+ .tituloDos{
+ display: flex;
+ }
+ 
+ .occult{
+   display: flex;
+   margin-left: 200px;
+   max-width: 400px;
+   
+ }
+ .logos{
+   display: none;
+ }
+
+ .bienvenida{
+  font-family: "open";
+  margin: 40px 60px;
+  width: 100%;
+  text-align:left
+  }
+
+  .imag{
+    width:435px;
+    Height:395px;
+   }
+   .agregado{
+     display: inline;
+   }
+   .menu{
+     display: flex;
+     justify-content: row;
+     gap: 60px;
+     margin: 30px 0px;
+     text-align: center;
+     font-size: 20px;
+     font-family: "roboto";
+   }
+ .juntos{
+   display: flex;
+   justify-content: space-between;
+ }
+
+ .contenedor-seccion-2{
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  max-width: 833px;
+}
+.logo-ok{
+  height: 211px;
+}
+.soy-matias{
+  align-items: flex-start;
+}
+.contenedor-soy{
+  align-items:flex-start
+}
+.algo-de-mi{
+  font-size: 24px;
+  width: 532px;
+  max-width: none;
+}
+
+
+.cont-final {
+  padding: 110px 0px;
+  flex-direction: row;
+  gap: 700px;
+  align-items: flex-start;
+}
 }
