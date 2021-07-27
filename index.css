@@ -410,7 +410,7 @@ body{
 .cont-final {
   padding: 110px 0px;
   flex-direction: row;
-  gap: 700px;
+  gap: 800px;
   align-items: flex-start;
 }
 }
