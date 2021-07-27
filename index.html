@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="/index.css" />
     <title>Document</title>
   </head>
   <body>
     <div class="contenedor-Principal">
-      <img class="medidas" src="./logo.svg" alt="Logox" />
+      <img class="medidas" src="imgs/logo.svg" alt="Logox" />
       <div class="menu">
-      <img class="barras" src="./barras.svg" alt="" />
+      <img class="barras" src="imgs/barras.svg" alt="" />
       <div class="agregado">quien soy?</div>
       <div class="agregado">servicios</div>
       <div class="agregado">Escribime</div>
@@ -20,10 +20,10 @@
     <div class="juntos">
     <h1 class="bienvenida">Bienvenidos a mi Web</h1>
 
-    <img class="imag" src="./señorss.svg" alt="" />
+    <img class="imag" src="imgs/señorss.svg" alt="" />
   </div>
   <div class="seccion-dos">
-    <img src="./check (1) 1.svg" alt="" class="occult">
+    <img src="imgs/check (1) 1.svg" alt="" class="occult">
     <div class="contenedor-seccion-dos">
       <div class="contenedor-ivan">
         <h1 class="titulo-ivan">Soy Ivan</h1>
@@ -37,7 +37,7 @@
           ultricies dolor.
         </p>
       </div>
-      <img src="check (1) 1.svg" alt="logo" class="logos" />
+      <img src="imgs/check (1) 1.svg" alt="logo" class="logos" />
     </div>
   </div>
  
@@ -47,7 +47,7 @@
       <h1 class="titulo-blanco">Mis servicios</h1>
       <div class="servicios">
         <div class="servicio">
-          <img src="./Group 7.png" alt="PC" class="pcs" />
+          <img src="imgs/Group 7.png" alt="PC" class="pcs" />
           <h3 class="title-service">Hago Cosas</h3>
           <p class="descripcion">
             Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur
@@ -56,7 +56,7 @@
           </p>
         </div>
         <div class="servicio">
-          <img src="./Group 7.png" alt="PC" class="pcs" />
+          <img src="imgs/Group 7.png" alt="PC" class="pcs" />
           <h3 class="title-service">Y más cosas</h3>
           <p class="descripcion">
             Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur
@@ -65,7 +65,7 @@
           </p>
         </div>
         <div class="servicio">
-          <img src="./Group 7.png" alt="PC" class="pcs" />
+          <img src="imgs/Group 7.png" alt="PC" class="pcs" />
           <h3 class="title-service">Y también otras cosas</h3>
           <p class="descripcion">
             Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur
@@ -78,59 +78,43 @@
   </main>
    
    
-    <section class="seccion-cuatro">
-      <h2 class="sub-titulo">Escribime</h2>
-
-      <div class="form">
-        <div class="name" style="width: 100%">
-          <label for="Name" class="label">NOMBRE</label>
-          <input
-            type="text"
-            name="Name"
-            id="Name"
-            style="width: 100%; height: 45px; margin-top: 9px"
-          />
-        </div>
-        <div class="email" style="width: 100%">
-          <label for="Email" class="label">EMAIL</label>
-          <input
-            type="email"
-            name="Email"
-            id="Email"
-            style="width: 100%; height: 45px; margin-top: 9px"
-          />
-        </div>
-        <div class="textarea" style="width: 100%">
-          <label for="Textarea" class="label">MENSAJE</label>
-          <textarea
-            name="Textarea"
-            id="Textarea"
-            cols="30"
-            rows="10"
-            style="width: 100%; height: 113px; margin-top: 9px"
-          ></textarea>
-        </div>
-        <div class="submit-button">Enviar</div>
+  <div class="seccion-4">
+    <h2 class="escribime">Escribime</h2>
+    <div class="form">
+      <div class="fieldset">
+        <label class="label" for="nombre">NOMBRE</label>
+        <input class="input-nombre" id="nombre" type="text" />
       </div>
-    </section>
+      <div class="fieldset">
+        <label class="label" for="email">EMAIL</label>
+        <input class="input-email" id="email" type="email" />
+      </div>
+      <div class="fieldset">
+        <label class="label" for="mensaje">Mensaje</label>
+        <textarea class="textarea" id="mensaje"></textarea>
+      </div>
+      <button class="boton">Enviar</button>
+    </div>
+  </div>
+
     <footer class="cont-final">
       <div class="logo">
-        <img src="logo.svg" alt="logo" class="logo" />
+        <img src="imgs/logo.svg" alt="logo" class="logo" />
       </div>
       <div class="redes-sociales">
         <div class="ig">
-          <img src="./insta.svg" alt="Ig" />
+          <img src="imgs/insta.svg" alt="Ig" />
           <label for="" class="labl">Instagram</label>
         </div>
         <div class="lidin">
-          <img src="./link.svg" alt="Ldin" />
+          <img src="imgs/link.svg" alt="Ldin" />
           <label for="" class="labl">Linkedin</label>
         </div>
         <div class="git">
-          <img src="./git.svg" alt="Git" />
+          <img src="imgs/git.svg" alt="Git" />
           <label for="" class="labl">Github</label>
         </div>
       </div>
-    </footer>
+    </footer> 
   </body>
 </html>
